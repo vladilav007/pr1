@@ -159,7 +159,7 @@ label glava2_1:
          jump glava2_1_1
     
     else:
-         jump glava2_2_2
+         jump glava2_1_2
          
 label glava2_1_1:
     hide ali2
@@ -196,6 +196,61 @@ label glava2_1_1:
     "*Неловкое молчание...*"
     return
 
+label glava2_1_2:
+    hide ali2
+    show ali at left
+    with slo
+    gg"Так что упырь?"
+    "*И тут ты наносишь сильнейший удар главарю*"
+    "*Выбиваешь два пальца *"
+    play music "music/run.mp3"
+    
+    hide ali
+    hide gop 
+    play music "music/run.mp3"
+    
+    "*Ты начинаешь бежать.*"
+    scene home 
+    with fade 
+    gg"Cтоять мразота!"
+    gg"Мы тебя найдем и уроем!"
+    "*Забегаешь в дом и прячешься.*"
+    stop music
+    scene room
+    play music "music/anime.mp3" fadeout 1
+    i"Подготовился называеться. "
+    i"Сколько там дней до ЗНО.. "
+    "*Смотришь на календарь*"
+    i"йоооомаайооо. Сегодня же днюха Томы!  {p}Нужно срочно написать ей письмо. "
+    play music "music/zona.mp3" fadeout 1
+    scene pis1
+    with fade
+    "..."
+    scene pis2
+    with fade
+    "..."
+    stop music
+    play music "music/anime.mp3" fadeout 1
+    scene room
+    i"Хотя бы одно дело готово. {p}
+    Зайду к брату в комнату, может он купил книги и готовиться."
+    scene dark
+    "*Cтучишь и заходишь*"
+    stop music
+    play music "music/gay.mp3" fadeout 1
+    i"Где тут свет врубить?"
+    i"Темно как в ж..."
+    i"А вот!"
+    scene spalna
+    with fade
+    i"Чево!?"
+    i"Ах вы пи... проклятые!"
+    "Эдик"  "Это не то что ты думаешь!"
+    "Эдик"  "Паша просто показывал мне новый прием."
+    i"Знаю я ваши гомозахваты!"
+    i"Эдик, через минуту зайди ко мне, нужно обсудить поступление"
+    "Эдик"  "Ok"
+    return
 label glava2_2:
     scene bg ttt
     show ali at left
@@ -212,7 +267,7 @@ label glava2_2:
     bom"Вот пидор."
     "   ---ПОЛУЧЕНО ЗВАНИЕ: *НУ ТЫ И СКОТИНА КОНЕЧНО*  ---"
     "*GAME OVER*"  
-return
+    return
 label glava3:
     stop music
     scene besedka11
@@ -744,143 +799,105 @@ label mavkagood:
     "скажи спасибо пацанам, за такой КОНЕЦ"
     return
 label mavkabad:
-   vod"Чтож, тогда ничего не поделаешь..."
-   i"Я рад что вы всё поняли."
-   vod"Садись на моего покемона, подкину тебя."
-   hide mavka
-   with slo
-   hide vod
-   with slo
-   hide vitgol3
-   with slo
-   scene pokemon
-   with slo
-   show vitgol3 at left
-   show vod at right
-   i"Где вы взяли такую тварь?"
-   vod"Мне бы тоже хотелось встретиться с тем чуваком, который мне на базаре таксу продал..."
-   hide vod
-   hide vitgol3
-   scene forest
-   with slo
-   show vitgol2 at left
-   with slo
-   show vod at right
-   with slo
-   "*Что-то тебе подсказывало, что вы не к тебе домой прибыли.*"
-   play music "music/dorime.mp3"
-   vod"Копай."
-   hide vitgol2
-   show vitgol3 at left
-   with slo
-   "..."
-   i"Простите я.."
-   vod"Я сказал копай."
-   stop music
-   play music "music/diatel.mp3"
-   i "Я, наверное, всё же люблю вашу дочь."
-   vod"Раньше зятьок думать надо было.{w} Теперь копай."
-   vod"Ты же пониманшь, как упадёт авторитет такого уважаемого человека как я, если кто узнает, что моя доця суженого выбрала, а он съебался."
-   i"Я, никому не скажу, честно. "
-   vod"Конечно не скажешь.{w} А теперь копай.."
-   i"Может как-то договоримся?. "
-   vod"Да ты уже как надо допизделся."
-   vod"Что ты вообще можешь мне предложить?"
-   vod"Я владелец шикарного болота на 1000 гектаров, велеколепной животины и дочери мои - красотки.{w} А ты алкаш из мухосранска."
-   i"Ладно, я всё понял...{w} Тогда можно последнее желание?"
-   vod"Валяй."
-   hide vitgol3
-   show vitgol2 at left
-   with slo
-   i"Можно мне литру пивка на последок бахнуть?"
-   vod"Можно конечно, но ты же понимаешь, что просто мог попросить не убивать тебя?"
-   i"Бля..."
-   play music "music/run.mp3"
-   "*Ты начинаешь бежать.*"
-   hide vitgol2
-   hide vod
-   scene forest2
-   show vitgol1 at left
-   with slo
-   show vod at right
-   with slo
-   vod"Стоять, сука"
-   "*Он со своей тварью быстро тебя нагонял...*"
-   hide vitgol1
-   hide vod
-   scene forest3
-   with slo
-   vod"Доганю, яица отор...ааай блять, сука, капкан!!"
-   vod"Теперь тебе точно пизда."
-   scene forest
-   show vitgol2 at left
-   with slo
-   show vod at right
-   with slo
-   hide vitgol2
-   show vitgol3 at left
-   with slo
-   stop music
-   play music "music/diatel.mp3"
-   vod"Попался петух?"
-   i"Видимо...."
-   i"Разрешите загадать последнее желание?"
-   vod"Ты, блять, издеваешься?"
-
-label glava2_2_2:
-    hide ali2
-    show ali at left
+    vod"Чтож, тогда ничего не поделаешь..."
+    i"Я рад что вы всё поняли."
+    vod"Садись на моего покемона, подкину тебя."
+    hide mavka
     with slo
-    gg"Так что упырь?"
-    "*И тут ты наносишь сильнейший удар главарю*"
-    "*Выбиваешь два пальца *"
+    hide vod
+    with slo
+    hide vitgol3
+    with slo
+    scene pokemon
+    with slo
+    show vitgol3 at left
+    show vod at right
+    i"Где вы взяли такую тварь?"
+    vod"Мне бы тоже хотелось встретиться с тем чуваком, который мне на базаре таксу продал..."
+    hide vod
+    hide vitgol3
+    scene forest
+    with slo
+    show vitgol2 at left
+    with slo
+    show vod at right
+    with slo
+    "*Что-то тебе подсказывало, что вы не к тебе домой прибыли.*"
+    play music "music/dorime.mp3"
+    vod"Копай."
+    hide vitgol2
+    show vitgol3 at left
+    with slo
+    "..."
+    i"Простите я.."
+    vod"Я сказал копай."
+    stop music
+    play music "music/diatel.mp3"
+    i "Я, наверное, всё же люблю вашу дочь."
+    vod"Раньше зятьок думать надо было.{w} Теперь копай."
+    vod"Ты же пониманшь, как упадёт авторитет такого уважаемого человека как я, если кто узнает, что моя доця суженого выбрала, а он съебался."
+    i"Я, никому не скажу, честно. "
+    vod"Конечно не скажешь.{w} А теперь копай.."
+    i"Может как-то договоримся?. "
+    vod"Да ты уже как надо допизделся."
+    vod"Что ты вообще можешь мне предложить?"
+    vod"Я владелец шикарного болота на 1000 гектаров, велеколепной животины и дочери мои - красотки.{w} А ты алкаш из мухосранска."
+    i"Ладно, я всё понял...{w} Тогда можно последнее желание?"
+    vod"Валяй."
+    hide vitgol3
+    show vitgol2 at left
+    with slo
+    i"Можно мне литру пивка на последок бахнуть?"
+    vod"Можно конечно, но ты же понимаешь, что просто мог попросить не убивать тебя?"
+    i"Бля..."
     play music "music/run.mp3"
-    
-    hide ali
-    hide gop 
-    play music "music/run.mp3"
-    
     "*Ты начинаешь бежать.*"
-    scene home 
-    with fade 
-    gg"Cтоять мразота!"
-    gg"Мы тебя найдем и уроем!"
-    "*Забегаешь в дом и прячешься.*"
+    hide vitgol2
+    hide vod
+    scene forest2
+    show vitgol1 at left
+    with slo
+    show vod at right
+    with slo
+    vod"Стоять, сука"
+    "*Он со своей тварью быстро тебя нагонял...*"
+    hide vitgol1
+    hide vod
+    scene forest3
+    with slo
+    vod"Доганю, яица отор...ааай блять, сука, капкан!!"
+    vod"Теперь тебе точно пизда."
+    scene forest
+    show vitgol2 at left
+    with slo
+    show vod at right
+    with slo
+    hide vitgol2
+    show vitgol3 at left
+    with slo
     stop music
-    scene room
-    play music "music/anime.mp3" fadeout 1
-    i"Подготовился называеться. "
-    i"Сколько там дней до ЗНО.. "
-    "*Смотришь на календарь*"
-    i"йоооомаайооо. Сегодня же днюха Томы!  {p}Нужно срочно написать ей письмо. "
-    play music "music/zona.mp3" fadeout 1
-    scene pis1
-    with fade
-    "..."
-    scene pis2
-    with fade
-    "..."
+    play music "music/diatel.mp3"
+    vod"Попался петух?"
+    i"Видимо...."
+    i"Разрешите загадать последнее желание?"
+    vod"Ты, блять, издеваешься?"
+    show mavka
+    with slo
+    mav"Зупинись таточку, я ж кохаю його!"
+    vod"Не вмешивайся дочь."
+    vod"Он не заслуживает твоей любви."
+    mav"Невже в тебе таке холодне серце, що ти не можеш навіть одного юнака пробачити."
+    mav"Він же нікого не вбив, нічого не вкрав, чи ти не можеш над ним змилуватись? "
+    "*В этот момент у тебя из кармана выпало два алмаза.*"
     stop music
-    play music "music/anime.mp3" fadeout 1
-    scene room
-    i"Хотя бы одно дело готово. {p}
-    Зайду к брату в комнату, может он купил книги и готовиться."
-    scene dark
-    "*Cтучишь и заходишь*"
+    play music "music/dorime.mp3"
+    mav"Бля..."
+    vod"Так ты, блять, ещё и алмазы у меня спиздил?!"
+    i"Простите."
     stop music
-    play music "music/gay.mp3" fadeout 1
-    i"Где тут свет врубить?"
-    i"Темно как в ж..."
-    i"А вот!"
-    scene spalna
-    with fade
-    i"Чево!?"
-    i"Ах вы пи... проклятые!"
-    "Эдик"  "Это не то что ты думаешь!"
-    "Эдик"  "Паша просто показывал мне новый прием."
-    i"Знаю я ваши гомозахваты!"
-    i"Эдик, через минуту зайди ко мне, нужно обсудить поступление"
-    "Эдик"  "Ok"
-    
-return
-
+    play music "music/diatel.mp3"
+    vod"Это уже даже не серьёзно, напомни, почему ты ещё жив?"
+    i"Потому что ваша дочь меня любит, а вы меня безмерно уважаете?"
+    "*Водяной щёлкнул пальцем.*"
+    "*чпуньк*"
+    "*ты превратился в волка*"

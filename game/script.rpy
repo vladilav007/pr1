@@ -250,6 +250,23 @@ label glava2_1_2:
     i"Знаю я ваши гомозахваты!"
     i"Эдик, через минуту зайди ко мне, нужно обсудить поступление"
     "Эдик"  "Ok"
+    scene zalhome
+    with fade
+    show ali2 at left
+    with slo
+    show edik at right
+    with slo
+    "Эдик"  "Что ты хотел?"
+    "Эдик"  "Мне с Пашкой еще еб...{w} тренить."
+    i"Успеете."
+    hide ali2
+    show ali at left
+    
+    
+    
+    
+    
+    
     return
 label glava2_2:
     scene bg ttt

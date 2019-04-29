@@ -350,6 +350,8 @@ style navigation_button_text:
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
 screen main_menu():
+    python:
+        renpy.music.queue("music/vladim.mp3",channel = "music", fadein = 1)
 
     ## This ensures that any other menu screen is replaced.
     tag menu

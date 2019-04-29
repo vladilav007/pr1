@@ -1,35 +1,35 @@
-Sat Apr 20 22:41:13 2019
-Windows-XP-5.1.2600-SP3
+Mon Apr 29 16:57:30 2019
+Windows-7-6.1.7601-SP1
 Ren'Py 6.99.14.3.3347
  
 
-Bootstrap to the start of init.init took 0.20s
-Early init took 0.01s
-Loader init took 0.03s
-Loading error handling took 0.14s
-Loading script took 0.55s
-Loading save slot metadata. took 0.22s
-Loading persistent took 0.04s
+Bootstrap to the start of init.init took 0.29s
+Early init took 0.04s
+Loader init took 0.04s
+Loading error handling took 0.11s
+Loading script took 0.37s
+Loading save slot metadata. took 0.40s
+Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.39s
-Loading analysis data took 0.07s
-Analyze and compile ATL took 0.01s
+Running init code took 0.50s
+Loading analysis data took 0.12s
+Analyze and compile ATL took 0.02s
 Index archives took 0.00s
-Dump and make backups. took 0.14s
+Dump and make backups. took 0.16s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.04s
+Initial gc. took 0.08s
 DPI scale factor: 1.156250
-Creating interface object took 0.51s
+Creating interface object took 1.07s
 Cleaning stores took 0.00s
-Init translation took 0.06s
+Init translation took 0.10s
 Build styles took 0.02s
-Load screen analysis took 0.21s
+Load screen analysis took 0.09s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
 Prepare screens took 0.15s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.12s
+Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.06s
@@ -176,6 +176,9 @@ Extensions:
     GL_SGIS_texture_edge_clamp
     GL_SGIS_texture_lod
     GL_SUN_multi_draw_arrays
+    WGL_EXT_extensions_string
+    WGL_EXT_swap_control
+    WINE_EXT_direct_rendering
 Number of texture units: 8
 Using shader environment.
 Using copy RTT.
@@ -188,26 +191,46 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 3.9430000782s
+Total time until interface ready: 4.68600010872s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.022667 seconds.
-- Frame drawn at 0.039667 seconds.
-- Frame drawn at 0.095667 seconds.
-- Frame drawn at 1.352667 seconds.
-- 1.352667 seconds to render 5 frames.
-- Frame drawn at 1.371667 seconds.
-- 1.349000 seconds to render 5 frames.
-- Frame drawn at 1.395667 seconds.
-- 1.356000 seconds to render 5 frames.
-- Frame drawn at 1.428667 seconds.
-- 1.333000 seconds to render 5 frames.
-- Frame drawn at 1.452667 seconds.
-- 0.100000 seconds to render 5 frames.
+- Frame drawn at 0.024667 seconds.
+- Frame drawn at 0.038667 seconds.
+- Frame drawn at 0.088667 seconds.
+- Frame drawn at 0.106667 seconds.
+- 0.106667 seconds to render 5 frames.
 Cleaning stores took 0.00s
-Init translation took 0.36s
+Init translation took 0.38s
 Build styles took 0.03s
+Load screen analysis took 0.04s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.01s
+Cleaning stores took 0.00s
+Init translation took 0.40s
+Build styles took 0.04s
+Load screen analysis took 0.04s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.01s
+Cleaning stores took 0.00s
+Init translation took 0.43s
+Build styles took 0.05s
+Load screen analysis took 0.04s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.01s
+Cleaning stores took 0.00s
+Init translation took 0.44s
+Build styles took 0.06s
 Load screen analysis took 0.05s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.01s
+Cleaning stores took 0.00s
+Init translation took 0.46s
+Build styles took 0.07s
+Load screen analysis took 0.04s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.01s

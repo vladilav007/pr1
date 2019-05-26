@@ -1,11 +1,13 @@
 ﻿default book = False
 default slo = Dissolve(1.0)
 define i = Character(_("Я"), color="#19070B")
+define ni = Character(_("Морозиха"), color="#19070B")
 define gg  = Character(_("Гопари"), color="#04B404")
 define bom = Character(_("Бродяга"), color="#3B240B")
 define dan = Character(_("Даня"), color="#3B240B")
 define mav = Character(_("Мавка"), color="#FF00FF")
 define vod = Character(_("Водяной"), color="#3B240B")
+define ed = Character(_("Эдик"), color="#808000")
 
 label start:
     $ test = 0
@@ -245,18 +247,59 @@ label glava2_1_2:
     with fade
     i"Чево!?"
     i"Ах вы пи... проклятые!"
-    "Эдик"  "Это не то что ты думаешь!"
-    "Эдик"  "Паша просто показывал мне новый прием."
+    ed  "Это не то что ты думаешь!"
+    ed  "Паша просто показывал мне новый прием."
     i"Знаю я ваши гомозахваты!"
     i"Эдик, через минуту зайди ко мне, нужно обсудить поступление"
-    "Эдик"  "Ok"
+    ed  "Ok"
     scene zalhome
     with fade
     show ali2 at left
     with slo
     show edik at right
     with slo
-    "Эдик"  "Что ти хотел?"
+    ed  "Что ты хотел?"
+    ed  "Мне с Пашкой еще еб...{w} тренить."
+    i"Успеете."
+    ed  "Так что!?"
+    hide ali2
+    show ali at left
+    with slo
+    menu:
+        "Я хочу бухнуть.":
+            $ test = 1
+        "Мне нужна твоя помощь.":
+            $ test = 2
+    if test == 1:
+        
+        ed  "А есть моменты, когда ты не хочешь бухнуть?"
+        i"Мне сейчас нужно."
+    
+    else:
+         ed  "Хочешь бухнуть?"
+         i"Да."
+    ed"А я тут каким боком?"
+    hide ali
+    show ali2 at left
+    with slo
+    i"Думаешь я не видел как ты две чекушки в шкаф спрятал?{p}
+    Но никто не узнает, если ты мне одну так сказать..."
+    stop music
+    "*Эдик полез в шкаф*"
+    play sound "music/bottle.mp3"
+    "*Ты олизываешь губы в предвкушении*"
+    play music "music/padal.mp3" fadeout 1
+    i"Спасибо тебе, брат, во век не забуду."
+    ed"Та ну тебя."
+    hide edik
+    with slo
+    "*Ты наконец-то понял, что семья самое главное в жизни*"
+    hide ali2
+    show myxaa
+
+            
+    
+    "*И заплакал*"
     return
 label glava2_2:
     scene bg ttt
@@ -527,6 +570,7 @@ label glava3_2_1:
     "*Ты занимался мине..., не суть.*"
     "*Ты разбудил пацыков.*"
     "*Гульня продолжаеться*"
+
     
 label glava3_2_2:
     play sound "music/Sound_mavka.mp3"
@@ -905,6 +949,16 @@ label mavkabad:
     play music "music/diatel.mp3"
     vod"Это уже даже не серьёзно, напомни, почему ты ещё жив?"
     i"Потому что ваша дочь меня любит, а вы меня безмерно уважаете?"
-    "*Водяной щёлкнул пальцем.*"
-    "*чпуньк*"
-    "*ты превратился в волка*"
+    vod "*Передёрнул затвор.*"
+    mav"О ні, я не можу на це дивитись."
+    "*Мавка убежала в слезах.*"
+    hide mavka
+    "*Вдруг раздался крик*"
+    "Крик" "Остановитесь!!!"
+    "*Голос всем покозался до боли знакомым.*"
+    show frek1
+    with slo
+    "Все" "Тётя Нина?!!!"
+    ni "Что вы здесь устроили?"
+    "**"
+

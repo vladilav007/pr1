@@ -14,6 +14,7 @@ label start:
     with slo
     play music "music/anime.mp3" fadeout 1
     scene room
+    show muxa
     i  "Сил учиться нет."
     i  "Скоро экзамены."
     i  "Но я действительно чувствую, что время до поступления трачу в никуда."
@@ -293,11 +294,29 @@ label glava2_1_2:
     ed"Та ну тебя."
     hide edik
     with slo
+    hide ali2
     "*Ты наконец-то понял, что семья самое главное в жизни*"
-    "*И заплакал*"
+    stop music
+    menu:
+        "Выпить все сразу.":
+            $ test = 1
+        "Пойти выпить во дворе.":
+            $ test = 2
+    if test == 1:
+        
+        play sound "music/drinking-water.mp3"
+        i"Чет мне не хорошо....{p} Паленка галимая...."
+        scene dark
+        i"брррєуєє бббьрррєууу"
+        "   ---ПОЛУЧЕНО ЗВАНИЕ: *ОБРЫГАЛ КОВРИК В ЗАЛЕ*  ---"
+        "*GAME OVER*"  
+        return
+    else:
+         jump narko
+ 
+  
+
     
-    
-    return
 label glava2_2:
     scene bg ttt
     show ali at left
@@ -958,4 +977,122 @@ label mavkabad:
     "Все" "Тётя Нина?!!!"
     ni "Что вы здесь устроили?"
     "**"
+label narko:
+    play music "music/anime.mp3" fadeout 1
+    with fade
+    scene pod
+    "*Ты радосно бегишь пить водяру*"
+    "*Это лучший день в двоей жизни*"
+    "*Вдруг...*"
+    stop music
+    play sound "music/broken_cup.mp3" 
+    i"аааа..стекло....."
+    i"А это что?"
+    i"Шприц в ноге!?"
+    "*....*"
+    play music "music/rados.mp3"
+    i"Гыыыы"
+    i"Далой футболку!{w}ГЫЫЫ..."
+    show vitgol2 at center 
 
+    with slo 
+    scene jel
+    with slo 
+    scene dark
+    with slo 
+    scene jel
+    with slo 
+    scene dark
+    with slo 
+    scene jel
+    with slo 
+    scene dark
+    with slo 
+    scene jel
+    i"Гыыыы"
+    hide vitgol2
+    show vitgol1
+    with fade
+    i"А на чем я полечу?{w}Гыыыы"
+    scene home
+    stop music
+    play sound "music/shmel.mp3"
+    i"..."
+    i"Дааа, то что нужно! {w} ГЫЫЫ)))"
+    hide vitgol1
+    with slo 
+    show muxa
+    with fade
+    i"ПОЛЕТЕЛИ!!!"
+    play music "music/rados.mp3"
+    hide muha
+    show muxa:
+      xalign 1.0 yalign 0.0
+      linear 3.0 xalign 0.0
+      pause 1.0
+      repeat
+    i"..."
+    scene bg ttt
+    show muxa:
+      xalign 1.0 yalign 0.0
+      linear 3.0 xalign 0.0
+      pause 1.0
+      repeat
+    i"ЭГЭГЭЭЭЭЙ!!!"
+    scene forest2
+    show muxa:
+      xalign 1.0 yalign 0.0
+      linear 3.0 xalign 0.0
+      pause 1.0
+      repeat
+    with slo
+    i"..."
+    scene street
+    show muxa:
+      xalign 1.0 yalign 0.0
+      linear 3.0 xalign 0.0
+      pause 1.0
+      repeat
+   
+    i"Я король ящериц!!! "
+    scene dk
+    hide muxa
+    stop music
+    show gop at right 
+    "Гопник1" "Не парься найдем этого придурка!"
+    play sound "music/shmel.mp3"
+    "Гопник2"  "Ты слышишь этот звук?"
+    play sound "music/shmel.mp3"
+    i"look up!!!"
+    show muxa:
+        rotate_pad False
+        xalign 0.0 yalign 0.0
+        rotate 0
+        linear 4.0 rotate 360
+        repeat
+    play music "music/rados.mp3"
+    "Гопник2"  "йооомааайооо!!!!???"
+    i"Пиф Пиф!"
+    "Гопники"  "аааааа!!!Помогите!"
+    hide gop 
+    with slo
+    hide muxa
+    scene jel
+    
+    show muxa:
+        xzoom .75 yzoom 1.25
+        linear 1.0 xzoom 1.25 yzoom .75
+        linear 1.0 xzoom .75 yzoom 1.25
+        repeat
+    i"А теперь и мне пора!{p}В теплые края!"
+    "---ПОЛУЧЕНО ЗВАНИЕ: *Властелин иглы*  ---"
+   
+    
+    
+ 
+    
+         
+    
+    
+    
+    

@@ -14,7 +14,6 @@ label start:
     with slo
     play music "music/anime.mp3" fadeout 1
     scene room
-    show muxa
     i  "Сил учиться нет."
     i  "Скоро экзамены."
     i  "Но я действительно чувствую, что время до поступления трачу в никуда."

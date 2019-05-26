@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 902: expected statement.
-    *"чпуньк"*
-             ^
+File "game/script.rpy", line 1004: expected statement.
+    repeat
+          ^
 
-File "game/script.rpy", line 903: expected statement.
-    *"ты превратился в волка"*
-                             ^
-
-Ren'Py Version: Ren'Py 6.99.14.3.3347
-Sat Mar 02 14:30:18 2019
+Ren'Py Version: Ren'Py 7.1.3.1092
+Sun May 26 13:41:55 2019

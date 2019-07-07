@@ -1,22 +1,36 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 120, in script
-    return
-Exception: Could not find return label (u'C:\\pg\\Vitalik\\RenPy\\pr1/game/script.rpy', 1551529886, 46).
+  File "game/script.rpy", line 511, in script
+    with zoomin(0.5)
+  File "game/script.rpy", line 511, in <module>
+    with zoomin(0.5)
+AttributeError: 'float' object has no attribute 'get_placement'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 120, in script
-    return
-  File "Z:\home\andrey\soft\RenPy\renpy-6.99.14.3-sdk\renpy\ast.py", line 1448, in execute
-    next_node(renpy.game.context().lookup_return(pop=True))
-  File "Z:\home\andrey\soft\RenPy\renpy-6.99.14.3-sdk\renpy\execution.py", line 629, in lookup_return
-    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
-Exception: Could not find return label (u'C:\\pg\\Vitalik\\RenPy\\pr1/game/script.rpy', 1551529886, 46).
+  File "game/script.rpy", line 511, in script
+    with zoomin(0.5)
+  File "Z:\home\andrey\soft\RenPy\renpy-6.99.14.3-sdk\renpy\ast.py", line 1330, in execute
+    trans = renpy.python.py_eval(self.expr)
+  File "Z:\home\andrey\soft\RenPy\renpy-6.99.14.3-sdk\renpy\python.py", line 1919, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "Z:\home\andrey\soft\RenPy\renpy-6.99.14.3-sdk\renpy\python.py", line 1912, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 511, in <module>
+    with zoomin(0.5)
+  File "Z:\home\andrey\soft\RenPy\renpy-6.99.14.3-sdk\renpy\curry.py", line 38, in __call__
+    **dict(self.kwargs.items() + kwargs.items()))
+  File "Z:\home\andrey\soft\RenPy\renpy-6.99.14.3-sdk\renpy\display\movetransition.py", line 336, in OldMoveTransition
+    rv = merge_slide(old_widget, new_widget)
+  File "Z:\home\andrey\soft\RenPy\renpy-6.99.14.3-sdk\renpy\display\movetransition.py", line 186, in merge_slide
+    old_pos = position(old)
+  File "Z:\home\andrey\soft\RenPy\renpy-6.99.14.3-sdk\renpy\display\movetransition.py", line 34, in position
+    xpos, ypos, xanchor, yanchor, _xoffset, _yoffset, _subpixel = d.get_placement()
+AttributeError: 'float' object has no attribute 'get_placement'
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.14.3.3347
-Виталик Алкаштити 1.0
-Sun May 26 22:28:22 2019
+Виталик Алкашити 1.0
+Fri Jul 05 17:43:40 2019

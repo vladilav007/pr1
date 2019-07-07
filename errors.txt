@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1004: expected statement.
-    repeat
-          ^
+File "game/script.rpy", line 512: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    rotate 0.5 to 360
+                     ^
 
-Ren'Py Version: Ren'Py 7.1.3.1092
-Sun May 26 13:41:55 2019
+Ren'Py Version: Ren'Py 6.99.14.3.3347
+Fri Jul 05 17:46:09 2019

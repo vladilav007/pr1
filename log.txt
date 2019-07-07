@@ -1,44 +1,44 @@
-Sun May 26 23:02:09 2019
+Fri Jul 05 19:01:28 2019
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.14.3.3347
  
 
-Bootstrap to the start of init.init took 0.27s
+Bootstrap to the start of init.init took 0.20s
 Early init took 0.01s
-Loader init took 0.06s
-Loading error handling took 0.12s
-Loading script took 1.34s
-Loading save slot metadata. took 0.50s
-Loading persistent took 0.01s
+Loader init took 0.03s
+Loading error handling took 0.05s
+Loading script took 1.26s
+Loading save slot metadata. took 0.07s
+Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.36s
-Loading analysis data took 0.10s
-Analyze and compile ATL took 0.02s
+Running init code took 0.32s
+Loading analysis data took 0.06s
+Analyze and compile ATL took 0.01s
 Index archives took 0.00s
-Backing up script files to 'C:\\users\\andrey\\Application Data/RenPy/backups\\pr1':
-Dump and make backups. took 0.40s
+Backing up script files to 'C:\\users\\andrey\\Application Data/RenPy/backups\\Vitalik Alkashity':
+Dump and make backups. took 0.15s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.09s
+Initial gc. took 0.05s
 DPI scale factor: 1.156250
-Creating interface object took 1.31s
+Creating interface object took 0.29s
 Cleaning stores took 0.00s
-Init translation took 0.09s
-Build styles took 0.02s
-Load screen analysis took 0.02s
-Analyze screens took 0.09s
-Save screen analysis took 0.21s
-Prepare screens took 0.17s
-Save pyanalysis. took 0.32s
-Save bytecode. took 0.17s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.16s
+Prepare screens took 0.15s
+Save pyanalysis. took 0.22s
+Save bytecode. took 0.13s
 Running _start took 0.01s
 Performance test:
-Interface start took 0.14s
+Interface start took 0.07s
 
 primary display bounds: (0, 0, 1400, 1050)
 swap interval: 1 frames
-Windowed mode.
-Screen sizes: virtual=(1280, 720) physical=(1295, 728) drawable=(1295, 728)
+Fullscreen mode.
+Screen sizes: virtual=(1280, 720) physical=(1400, 1050) drawable=(1400, 1050)
 Vendor: 'Intel Open Source Technology Center'
 Renderer: 'Mesa DRI Intel(R) 945GM x86/MMX/SSE2'
 Version: '1.4 Mesa 18.0.5'
@@ -192,22 +192,18 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 7.99399995804s
+Total time until interface ready: 5.08200001717s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.073667 seconds.
-- Frame drawn at 1.007667 seconds.
-- Frame drawn at 1.036667 seconds.
-- Frame drawn at 1.046667 seconds.
-- 1.046667 seconds to render 5 frames.
-- Frame drawn at 1.112667 seconds.
-- 1.039000 seconds to render 5 frames.
-- Frame drawn at 1.135667 seconds.
-- 0.128000 seconds to render 5 frames.
+- Frame drawn at 0.024667 seconds.
+- Frame drawn at 0.040667 seconds.
+- Frame drawn at 0.084666 seconds.
+- Frame drawn at 0.103667 seconds.
+- 0.103667 seconds to render 5 frames.
 Cleaning stores took 0.00s
-Init translation took 0.39s
-Build styles took 0.04s
-Load screen analysis took 0.07s
+Init translation took 0.35s
+Build styles took 0.03s
+Load screen analysis took 0.15s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.01s
